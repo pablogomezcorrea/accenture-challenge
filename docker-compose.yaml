@@ -1,0 +1,34 @@
+services:
+  accenture-challenge-app:
+    container_name: accenture-challenge-app-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pablogomezcorrea/accenture-challenge:accenture-challenge-app-1.0
+    ports:
+      - "8501:8501"
+    working_dir: /app
+    environment:
+      - STREAMLIT_DISABLE_ONBOARDING=true
+      - DISPLAY=:99
+    command: >
+      sh -c "xvfb-run -a python -m streamlit run app.py --server.headless=true "--server.fileWatcherType=none" --browser.gatherUsageStats=false"
+
+  accenture-challenge-ollama:
+    container_name: accenture-challenge-ollama-container
+    image: ollama/ollama:latest
+    ports:
+      - "11430:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    entrypoint: /bin/sh
+    command: -c "ollama serve & sleep 5 && ollama pull llama3.1 && tail -f /dev/null"
+
+volumes:
+  ollama_data:
+
+
+
