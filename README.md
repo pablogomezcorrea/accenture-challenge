@@ -13,10 +13,10 @@
 ## Infraestrutura
 * Docker Compose
 
-# Pacotes
+## Pacotes
 Todas as bibliotecas estão listadas no requirements.txt 
 
-# Docker
+## Docker
 Para o deploy da aplicação, foi criado um docker-compose.yaml que irá fazer 
 todo o processo automaticamente. O comando à ser executado segue abaixo, ele deve ser
 executado na raiz da aplicação
@@ -33,11 +33,11 @@ Após finalizar o processo de deploy, será possível visualizar dois containers
 é possível visualizar nos logs
 
 
-# Tela do Sistema
+## Tela do Sistema
 
 ![img_1.png](img_1.png)
 
-# Resumo
+## Resumo
 O objetivo da aplicação, foi desenvolver um agente de vendas, que iria realizar análises baseadas nos 
 dados disponibilizados no arquivo **sales.csv**.
 As técnicas que apliquei, além de um pouco de engenharia de prompt, 
