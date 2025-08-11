@@ -32,9 +32,20 @@ Após finalizar o processo de deploy, será possível visualizar dois containers
 É necessário aguardar alguns minuto até que o modelo seja baixado noo Ollama automaticamente, 
 é possível visualizar nos logs
 
+## Teste
+Para criar os containers e inicializar a aplicação na Docker:
+
+```
+docker compose up -d build
+```
+Para acessar a aplicação segue a URL:
+```
+http://localhost:8501/
+```
+Em seguida será exibida a tela do sistema, onde será exibido um chat, 
+aonde você poderá interagir com uma IA agente de vendas.
 
 ## Tela do Sistema
-
 ![img_1.png](img_1.png)
 
 ## Resumo
