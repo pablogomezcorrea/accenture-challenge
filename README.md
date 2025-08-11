@@ -32,7 +32,7 @@ Após finalizar o processo de deploy, será possível visualizar dois containers
 É necessário aguardar alguns minuto até que o modelo seja baixado noo Ollama automaticamente, 
 é possível visualizar nos logs
 
-## Teste
+## Inicializando a aplicação
 Para criar os containers e inicializar a aplicação na Docker:
 
 ```
@@ -42,6 +42,16 @@ Para acessar a aplicação segue a URL:
 ```
 http://localhost:8501/
 ```
+
+Se optar por executar localmente na sua IDE, irá necessitar instalar o Streamlit
+```
+pip install streamlit
+```
+Para executá-lo segue o comando:
+```
+streamli run app.py
+```
+
 Em seguida será exibida a tela do sistema, onde será exibido um chat, 
 aonde você poderá interagir com uma IA agente de vendas.
 
