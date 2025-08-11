@@ -21,9 +21,9 @@ Para o deploy da aplicação, foi criado um docker-compose.yaml que irá fazer
 todo o processo automaticamente. O comando à ser executado segue abaixo, ele deve ser
 executado na raiz da aplicação
 
-<code>
+```
 docker compose up -d build
-</code>
+```
 
 Após finalizar o processo de deploy, será possível visualizar dois containers
 
