@@ -29,7 +29,7 @@ Após finalizar o processo de deploy, será possível visualizar dois containers
 
 ![img.png](img.png)
 
-É necessário aguardar alguns minuto até que o modelo seja baixado noo Ollama automaticamente, 
+É necessário aguardar alguns minuto até que o modelo seja baixado no Ollama automaticamente, 
 é possível visualizar nos logs
 
 ## Inicializando a aplicação
