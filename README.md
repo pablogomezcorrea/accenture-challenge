@@ -67,3 +67,6 @@ dados disponibilizados no arquivo **sales.csv**.
 As técnicas que apliquei, além de um pouco de engenharia de prompt, 
 foi utilizado FAISS para armazenar e buscar embeddings à partir do CSV 
 
+**Author:** Pablo Gomes Corrêa  
+**Date:** 11/08/2025  
+**Email:** pablogomezcorrea@gmail.com
