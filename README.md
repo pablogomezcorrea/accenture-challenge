@@ -21,15 +21,15 @@ Para o deploy da aplicação, foi criado um docker-compose.yaml que irá fazer
 todo o processo automaticamente. O comando à ser executado segue abaixo, ele deve ser
 executado na raiz da aplicação
 
-<code>
+```
 docker compose up -d build
-</code>
+```
 
 Após finalizar o processo de deploy, será possível visualizar dois containers
 
 ![img.png](img.png)
 
-É necessário aguardar alguns minuto até que o modelo seja baixado noo Ollama automaticamente, 
+É necessário aguardar alguns minuto até que o modelo seja baixado no Ollama automaticamente, 
 é possível visualizar nos logs
 
 ## Inicializando a aplicação
